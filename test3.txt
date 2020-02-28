@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		double d1;
+		double p1;
+		double d2;
+		double p2;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Medium pizza diameter (in.):");
+		
+	
+		d1 = sc.nextDouble();
+		
+		System.out.print("Medium pizza price ($):");
+		
+		p1 = sc.nextDouble();
+		
+		System.out.print("Large pizza diameter (in.):");
+		
+	
+		d2 = sc.nextDouble();
+		
+		System.out.print("Large pizza price ($):");
+		
+		p2 = sc.nextDouble();
+		
+		double mid_total = (Math.pow((d1/2), 2) * Math.PI)/p1;
+		double large_total = (Math.pow((d2/2), 2) * Math.PI)/p2;
+		
+		System.out.println("Medium pizza per dollar:" + mid_total +"sq. in. per $");
+		System.out.println("Large pizza per dollar:" + large_total +"sq. in. per $");
+		sc.close();
+		
+	
+		
+	}
+}
+

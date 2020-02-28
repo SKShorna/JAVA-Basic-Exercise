@@ -1,0 +1,33 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        System.out.println("Hello");
+        System.out.println("World");
+        
+        int myvar;
+        double num = 51.432;
+        myvar = 10;
+        myvar = myvar+10;
+        int x = 100;
+        
+        System.out.println("The  number is:" + (30*x));
+        
+        System.out.println("My var is :"+ myvar);
+        System.out.println("My double number is: "+ num);
+        
+        int a, b, c;
+        
+        a = 10;
+        b = 20;
+        c = 5;
+        
+        float avg;
+        
+        avg = (a+b+c)/3;
+        avg = (float)(a+b+c)/3;
+        
+        System.out.println("The average number is:" + avg);
+        
+     }
+}
