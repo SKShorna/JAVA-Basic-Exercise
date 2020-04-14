@@ -1,0 +1,54 @@
+// Complete the following method, which should print
+	//  the odd elements from the array x.  If x contains no
+	//  odd elements, print nothing.
+	// Your code should work ***for any array length, and for any
+	//  array elements***.  For example, if x contains {1, -1, 3, 4, 5},
+	//  calling printOdds should show 1, -1, 3, and 5.
+  
+import java.util.*;
+public class Main
+{
+    
+    public static void printOdds(int[] x) {
+        
+        System.out.println("Odd Numbers:");
+		
+	for(int i=0;i<x.length;i++){
+	    if(x[i]%2!=0){  
+        System.out.println(x[i]); 
+	    }
+        
+    }	
+		
+		
+	}
+	public static void main(String[] args) {
+	
+    Scanner sc = new Scanner(System.in);
+    
+    int size;
+    System.out.println("Enter the number of size of array");
+    
+    
+    size = sc.nextInt();
+    
+    int[] a = new int[size];
+    
+    System.out.println("Enter the array element");
+    
+    //For reading the element
+    
+    for(int i=0;i<size;i++) {
+        a[i] = sc.nextInt();
+    }
+    //For print the array element
+    
+    for(int i=0;i<size;i++) {
+       System.out.println(a[i]);  
+    }
+		
+	 printOdds(a);
+		
+	}
+  
+}
